@@ -38,4 +38,34 @@ public class PhoneNumberCreatorTest {
 
     assertEquals (exception.getMessage(), expectedMsg);
   }
+
+  @Test
+  @DisplayName("Creating a phone number with negative integers throws.")
+  public void testCreateNegativeIntPhoneNumberThrows() {
+    var phoneArray = new int[] {5, 2, 3, 5, 5, -5, 0, -7, 2, 1};
+
+    Exception exception = assertThrows (
+      ImproperPhoneNumber.class,
+      () -> phoneNumberCreator.createPhoneNumber (phoneArray)
+    );
+
+    String expectedMsg = "Phone number digits cannot be negative.";
+
+    assertEquals (exception.getMessage(), expectedMsg);
+  }
+
+  @Test
+  @DisplayName("Creating a phone number with non-single digit integers throws.")
+  public void testCreateNonSingleDigitIntPhoneNumberThrows() {
+    var phoneArray = new int[] {5, 2, 3, 5, 5, 15, 0, 27, 2, 1};
+
+    Exception exception = assertThrows (
+      ImproperPhoneNumber.class,
+      () -> phoneNumberCreator.createPhoneNumber (phoneArray)
+    );
+
+    String expectedMsg = "Phone number integer input must be single-digit.";
+
+    assertEquals (exception.getMessage(), expectedMsg);
+  }
 }
