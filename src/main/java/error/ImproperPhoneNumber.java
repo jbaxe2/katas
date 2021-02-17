@@ -1,5 +1,7 @@
+package error;
+
 public class ImproperPhoneNumber extends Exception {
-  ImproperPhoneNumber (String message) {
+  public ImproperPhoneNumber (String message) {
     super (message);
   }
 }

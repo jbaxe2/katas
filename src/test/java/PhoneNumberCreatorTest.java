@@ -1,3 +1,5 @@
+import error.*;
+
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -20,10 +22,7 @@ public class PhoneNumberCreatorTest {
       phoneNumber = phoneNumberCreator.createPhoneNumber (phoneArray);
     } catch (ImproperPhoneNumber ignored) {}
 
-    assertEquals (
-      "(523) 555-0721", phoneNumber,
-      "Create a phone number based on an array of numerical input."
-    );
+    assertEquals ("(523) 555-0721", phoneNumber);
   }
 
   @Test
