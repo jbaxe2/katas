@@ -1,5 +1,8 @@
 *Simple katas Changelog.*
 
+0.2.0
+- Added row sum of odd numbers.
+
 0.1.0
 - Added sheep counter kata.
 - Simple refactoring of error classes into a package.
