@@ -1,5 +1,9 @@
 *Simple katas Changelog.*
 
+0.4.0
+- Added even or odd.
+- Added Tribonacci sequence.
+
 0.3.0
 - Added triangle checker.
 

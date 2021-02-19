@@ -10,3 +10,5 @@ Some of these katas were found on codewars.com:
 - Counting Sheep (54edbc7200b811e956000556)
 - Sum of Row of Odd Numbers (55fd2d567d94ac3bc9000064)
 - Is This a Triangle? (56606694ec01347ce800001b)
+- Even or Odd (53da3dbb4a5168369a0000fe)
+- Tribonacci Sequence (556deca17c58da83c00002db)
