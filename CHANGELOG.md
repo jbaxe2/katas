@@ -1,5 +1,8 @@
 *Simple katas Changelog.*
 
+0.3.0
+- Added triangle checker.
+
 0.2.0
 - Added row sum of odd numbers.
 
