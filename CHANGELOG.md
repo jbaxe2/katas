@@ -1,5 +1,9 @@
 *Simple katas Changelog.*
 
+0.6.0
+- Added n'th series sum.
+- Minor refactoring to spoonerize me.
+
 0.5.0
 - Added spoonerize me.
 

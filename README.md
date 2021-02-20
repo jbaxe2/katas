@@ -12,5 +12,5 @@ Some of these katas were found on codewars.com:
 - Is This a Triangle? (56606694ec01347ce800001b)
 - Even or Odd (53da3dbb4a5168369a0000fe)
 - Tribonacci Sequence (556deca17c58da83c00002db)
-- Spponerize Me (56b8903933dbe5831e000c76)
-- 
+- Spoonerize Me (56b8903933dbe5831e000c76)
+- Sum of the first n'th term of Series (555eded1ad94b00403000071)
