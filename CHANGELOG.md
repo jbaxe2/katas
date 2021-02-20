@@ -1,5 +1,8 @@
 *Simple katas Changelog.*
 
+0.5.0
+- Added spoonerize me.
+
 0.4.0
 - Added even or odd.
 - Added Tribonacci sequence.
