@@ -26,10 +26,15 @@ public class EqualSidesArrayKataTest {
 
     assertEquals (
       6,
-      EqualSidesArrayKata.findEvenIndex (
-        new int[] {4, 5, 6, 7, 8, 9, 10, 9, 8, 7, 6, 5, 4}
-      )
+      EqualSidesArrayKata.findEvenIndex (new int[] {4,5,6,7,8,9,10,9,8,7,6,5,4})
     );
+
+    assertEquals (
+      0,
+      EqualSidesArrayKata.findEvenIndex (new int[] {20,10,-80,10,10,15,35})
+    );
+
+    assertEquals (0, EqualSidesArrayKata.findEvenIndex (new int[]{1,0}));
   }
 
   @Test
@@ -42,5 +47,7 @@ public class EqualSidesArrayKataTest {
     assertEquals (
       -1, EqualSidesArrayKata.findEvenIndex (new int[] {-8505, -5130, 1926, -9026})
     );
+
+    assertEquals (-1, EqualSidesArrayKata.findEvenIndex (new int[]{}));
   }
 }

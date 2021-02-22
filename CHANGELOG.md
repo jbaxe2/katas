@@ -1,5 +1,8 @@
 *Simple katas Changelog.*
 
+0.7.1
+- Refactored equal sides of an array.
+
 0.7.0
 - Added equal sides of an array.
 
