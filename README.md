@@ -12,3 +12,4 @@ Some of these katas were found on codewars.com:
 - Tribonacci Sequence (556deca17c58da83c00002db)
 - Spoonerize Me (56b8903933dbe5831e000c76)
 - Sum of the first n'th term of Series (555eded1ad94b00403000071)
+- Equal Sides of an Array (5679aa472b8f57fb8c000047)
