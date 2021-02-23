@@ -1,5 +1,8 @@
 *Simple katas Changelog.*
 
+0.8.0
+- Added the old switcheroo.
+
 0.7.1
 - Refactored equal sides of an array.
 

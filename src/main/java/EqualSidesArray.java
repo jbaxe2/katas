@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class EqualSidesArrayKata {
+public class EqualSidesArray {
   public static int findEvenIndex (int[] arr) {
     for (int i=0; i<arr.length-1; i++) {
       if (_determineIfIndex (arr, i)) {
