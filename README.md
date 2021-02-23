@@ -14,3 +14,4 @@ Some of these katas were found on codewars.com:
 - Sum of the first n'th term of Series (555eded1ad94b00403000071)
 - Equal Sides of an Array (5679aa472b8f57fb8c000047)
 - The Old Switcheroo (55d410c492e6ed767000004f)
+- Tortoise Racing (55e2adece53b4cdcb900006c)

@@ -1,5 +1,8 @@
 *Simple katas Changelog.*
 
+0.9.0
+- Added tortoise racing.
+
 0.8.0
 - Added the old switcheroo.
 
