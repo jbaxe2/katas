@@ -15,3 +15,4 @@ Some of these katas were found on codewars.com:
 - Equal Sides of an Array (5679aa472b8f57fb8c000047)
 - The Old Switcheroo (55d410c492e6ed767000004f)
 - Tortoise Racing (55e2adece53b4cdcb900006c)
+- Convert String to Camel Case (517abf86da9663f1d2000003)

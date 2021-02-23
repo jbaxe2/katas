@@ -1,5 +1,8 @@
 *Simple katas Changelog.*
 
+0.10.0
+- Added convert string to camel case.
+
 0.9.0
 - Added tortoise racing.
 
