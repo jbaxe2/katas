@@ -1,5 +1,8 @@
 *Simple katas Changelog.*
 
+0.11.0
+- Added surreal number construction rule.
+
 0.10.0
 - Added convert string to camel case.
 

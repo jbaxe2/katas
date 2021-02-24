@@ -22,7 +22,6 @@ public class Tortoise {
 
     double decimalMinutes = (decimalHours - hours) * 60.0;
     double normalizedMinutes = decimalMinutes + 0.0001;
-
     int minutes = (int) Math.floor (normalizedMinutes);
 
     double decimalSeconds = (normalizedMinutes - minutes) * 60.0;
