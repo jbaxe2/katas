@@ -1,9 +1,10 @@
+import java.util.*;
 import java.util.stream.*;
 
 public class VowelIndexer {
-  private final static char[] vowels = new char[] {
+  private final static List<Character> vowels = Arrays.asList (
     'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'
-  };
+  );
 
   public static String vowel2Index (String starterStr) {
     String[] indexedStr = _createIndexedStr (starterStr.toCharArray());
@@ -16,20 +17,10 @@ public class VowelIndexer {
 
     for (var i=0; i<theChars.length; i++) {
       indexedStr[i] =
-        _charIsVowel (theChars[i]) ? ("" + (i+1)) : ("" + theChars[i]);
+        vowels.contains (theChars[i]) ? ("" + (i+1)) : ("" + theChars[i]);
     }
 
     return indexedStr;
-  }
-
-  private static boolean _charIsVowel (char theChar) {
-    for (char vowel : vowels) {
-      if (vowel == theChar) {
-        return true;
-      }
-    }
-
-    return false;
   }
 
   private static String _buildString (String[] indexedStr) {
