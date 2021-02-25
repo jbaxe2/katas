@@ -1,3 +1,5 @@
+import java.util.stream.*;
+
 public class VowelIndexer {
   private final static char[] vowels = new char[] {
     'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'
@@ -13,11 +15,8 @@ public class VowelIndexer {
     var indexedStr = new String[theChars.length];
 
     for (var i=0; i<theChars.length; i++) {
-      if (_charIsVowel (theChars[i])) {
-        indexedStr[i] = "" + (i+1);
-      } else {
-        indexedStr[i] = "" + theChars[i];
-      }
+      indexedStr[i] =
+        _charIsVowel (theChars[i]) ? ("" + (i+1)) : ("" + theChars[i]);
     }
 
     return indexedStr;
@@ -36,9 +35,7 @@ public class VowelIndexer {
   private static String _buildString (String[] indexedStr) {
     var result = new StringBuilder();
 
-    for (String anIndexedStr : indexedStr) {
-      result.append (anIndexedStr);
-    }
+    Stream.of (indexedStr).forEach (result::append);
 
     return result.toString();
   }

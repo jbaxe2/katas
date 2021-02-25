@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.stream.*;
 
 public class EqualSidesArray {
   public static int findEvenIndex (int[] arr) {
@@ -19,19 +20,9 @@ public class EqualSidesArray {
   }
 
   private static boolean _sumsEquate (int[] firstArr, int[] secondArr) {
-    final int firstSum = _sumArrayValues (firstArr);
-    final int secondSum = _sumArrayValues (secondArr);
+    final int firstSum = IntStream.of (firstArr).sum();
+    final int secondSum = IntStream.of (secondArr).sum();
 
     return firstSum == secondSum;
-  }
-
-  private static int _sumArrayValues (int[] arr) {
-    int sum = 0;
-
-    for (int value : arr) {
-      sum += value;
-    }
-
-    return sum;
   }
 }

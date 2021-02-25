@@ -1,10 +1,14 @@
+import java.util.stream.*;
+
 public class NthSeries {
   public static String seriesSum (int n) {
     if (1 > n) {
       return "0.00";
     }
 
-    return _formatSummedSeries (_sumSeries (_buildSeries (n)));
+    return _formatSummedSeries (
+      DoubleStream.of (_buildSeries (n)).sum()
+    );
   }
 
   private static double[] _buildSeries (int n) {
@@ -15,16 +19,6 @@ public class NthSeries {
     }
 
     return series;
-  }
-
-  private static double _sumSeries (double[] series) {
-    double sum = 0.0;
-
-    for (double term : series) {
-      sum += term;
-    }
-
-    return sum;
   }
 
   private static String _formatSummedSeries (double summedSeries) {

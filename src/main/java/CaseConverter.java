@@ -1,3 +1,5 @@
+import java.util.stream.*;
+
 public class CaseConverter {
   public static String toCamelCase (String starterString) {
     String[] splitStrings =
@@ -22,9 +24,7 @@ public class CaseConverter {
   private static String _rebuildString (String[] splitStr) {
     var strBuilder = new StringBuilder();
 
-    for (String strPiece : splitStr) {
-      strBuilder.append (strPiece);
-    }
+    Stream.of (splitStr).forEach (strBuilder::append);
 
     return strBuilder.toString();
   }

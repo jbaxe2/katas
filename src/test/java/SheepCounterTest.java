@@ -1,6 +1,5 @@
-import error.*;
-
 import org.junit.jupiter.api.*;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class SheepCounterTest {
@@ -20,44 +19,12 @@ public class SheepCounterTest {
       true, true, true, true, false, false, true, true
     };
 
-    int sheepCount = 0;
-
-    try {
-      sheepCount = sheepCounter.countSheeps (placedSheep);
-    } catch (InvalidSheep ignored) {}
-
-    assertEquals (17, sheepCount);
+    assertEquals (17, sheepCounter.countSheeps (placedSheep));
   }
 
   @Test
-  @DisplayName("Providing null for the sheep placements throws.")
+  @DisplayName("Providing null for the sheep placements results in 0 sheep.")
   public void testCountingNullPlacementsThrows() {
-    Exception exception = assertThrows (
-      InvalidSheep.class,
-      () -> sheepCounter.countSheeps (null)
-    );
-
-    String expectedMsg = "Sheep placements cannot be null.";
-
-    assertEquals (exception.getMessage(), expectedMsg);
-  }
-
-  @Test
-  @DisplayName("Providing null values for the sheep throws.")
-  public void testCountingNullSheepThrows() {
-    Boolean[] placedSheep = {
-      true, true, true, false, true, true, true, true,
-      true, false, true, false, true, false, null, true,
-      true, true, true, null, false, false, true, true
-    };
-
-    Exception exception = assertThrows (
-      InvalidSheep.class,
-      () -> sheepCounter.countSheeps (placedSheep)
-    );
-
-    String expectedMsg = "Placements for sheep cannot be null.";
-
-    assertEquals (exception.getMessage(), expectedMsg);
+    assertEquals (0, sheepCounter.countSheeps (null));
   }
 }

@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.concurrent.atomic.*;
 
 public class RowSumOddNumbers {
   public static int rowSumOddNumbers (int n) {
@@ -29,12 +30,10 @@ public class RowSumOddNumbers {
   }
 
   private static int _sumRow (List<Integer> oddRow) {
-    int sum = 0;
+    var sum = new AtomicInteger();
 
-    for (Integer odd : oddRow) {
-      sum += odd;
-    }
+    oddRow.forEach (sum::addAndGet);
 
-    return sum;
+    return sum.get();
   }
 }
