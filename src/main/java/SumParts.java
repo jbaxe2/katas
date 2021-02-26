@@ -26,6 +26,6 @@ public class SumParts {
   }
 
   private static int _sumListParts (final List<Integer> intList) {
-    return intList.parallelStream().mapToInt (Integer::intValue).sum();
+    return intList.stream().mapToInt (Integer::intValue).sum();
   }
 }
