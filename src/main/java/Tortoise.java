@@ -4,9 +4,7 @@ public class Tortoise {
       return null;
     }
 
-    double decimalHours = _calculateDecimalTime (v1, v2, g);
-
-    return _calculateTimeComponents (decimalHours);
+    return _calculateTimeComponents (_calculateDecimalTime (v1, v2, g));
   }
 
   private static boolean _verifyConditions (int v1, int v2, int g) {

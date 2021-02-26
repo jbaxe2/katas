@@ -1,5 +1,8 @@
 *Simple katas Changelog.*
 
+0.12.0
+- Added sum of parts.
+
 0.11.1
 - Refactored some solutions.
 
