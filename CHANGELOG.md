@@ -1,5 +1,8 @@
 *Simple katas Changelog.*
 
+0.12.1
+- Optimized sum of parts to pass optimization aspect of kata challenge.
+
 0.12.0
 - Added sum of parts.
 

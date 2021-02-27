@@ -1,6 +1,3 @@
-import java.util.*;
-import java.util.stream.*;
-
 public class SumParts {
   public static int[] sumParts (int[] intArr) {
     if (null == intArr) {
@@ -11,21 +8,22 @@ public class SumParts {
   }
 
   private static int[] _sumParts (int[] intArr) {
-    List<Integer> result = new ArrayList<>();
+    var result = new int[intArr.length+1];
 
-    List<Integer> intList =
-      IntStream.of (intArr).boxed().collect (Collectors.toList());
+    int fullSum = 0;
+    int decrementBy = 0;
 
-    for (int i=0; i<intArr.length; i++) {
-      result.add (_sumListParts (intList.subList (i, intArr.length)));
+    for (int intNum : intArr) {
+      fullSum += intNum;
     }
 
-    result.add (0);
+    for (int i=0; i<intArr.length; i++) {
+      result[i] = fullSum - decrementBy;
+      decrementBy += intArr[i];
+    }
 
-    return result.stream().mapToInt (Integer::intValue).toArray();
-  }
+    result[intArr.length] = 0;
 
-  private static int _sumListParts (final List<Integer> intList) {
-    return intList.stream().mapToInt (Integer::intValue).sum();
+    return result;
   }
 }
