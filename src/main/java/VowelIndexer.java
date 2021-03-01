@@ -6,19 +6,19 @@ public class VowelIndexer {
   );
 
   public static String vowel2Index (String starterStr) {
-    String[] indexedStr = _createIndexedStr (starterStr.toCharArray());
+    String[] indexedStrs = _createIndexedStr (starterStr.toCharArray());
 
-    return String.join ("", indexedStr);
+    return String.join ("", indexedStrs);
   }
 
   private static String[] _createIndexedStr (char[] theChars) {
-    var indexedStr = new String[theChars.length];
+    var indexedStrs = new String[theChars.length];
 
     for (var i=0; i<theChars.length; i++) {
-      indexedStr[i] =
+      indexedStrs[i] =
         vowels.contains (theChars[i]) ? ("" + (i+1)) : ("" + theChars[i]);
     }
 
-    return indexedStr;
+    return indexedStrs;
   }
 }

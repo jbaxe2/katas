@@ -2,7 +2,7 @@ import java.util.*;
 
 public class SurrealCheck {
   public boolean isSurreal (String left, String right) {
-    if ("".equals(left) || "".equals(right)) {
+    if ("".equals (left) || "".equals (right)) {
       return true;
     }
 
