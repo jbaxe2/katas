@@ -1,5 +1,4 @@
 import java.util.*;
-import java.util.stream.*;
 
 public class VowelIndexer {
   private final static List<Character> vowels = Arrays.asList (
@@ -9,7 +8,7 @@ public class VowelIndexer {
   public static String vowel2Index (String starterStr) {
     String[] indexedStr = _createIndexedStr (starterStr.toCharArray());
 
-    return _buildString (indexedStr);
+    return String.join ("", indexedStr);
   }
 
   private static String[] _createIndexedStr (char[] theChars) {
@@ -21,13 +20,5 @@ public class VowelIndexer {
     }
 
     return indexedStr;
-  }
-
-  private static String _buildString (String[] indexedStr) {
-    var result = new StringBuilder();
-
-    Stream.of (indexedStr).forEach (result::append);
-
-    return result.toString();
   }
 }

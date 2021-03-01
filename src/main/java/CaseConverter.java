@@ -1,11 +1,11 @@
-import java.util.stream.*;
+
 
 public class CaseConverter {
   public static String toCamelCase (String starterString) {
     String[] splitStrings =
       starterString.split (_determineDelimiter (starterString));
 
-    return _rebuildString (_capitalizeTokens (splitStrings));
+    return String.join ("", _capitalizeTokens (splitStrings));
   }
 
   private static String _determineDelimiter (String delimitedString) {
@@ -19,13 +19,5 @@ public class CaseConverter {
     }
 
     return splitStrings;
-  }
-
-  private static String _rebuildString (String[] splitStr) {
-    var strBuilder = new StringBuilder();
-
-    Stream.of (splitStr).forEach (strBuilder::append);
-
-    return strBuilder.toString();
   }
 }

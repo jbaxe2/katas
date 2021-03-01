@@ -6,12 +6,12 @@ public class PalindromeChecker {
   }
 
   private String _reverseString (String starterStr) {
-    var reversed = new StringBuilder();
+    var reversedStr = new StringBuilder();
 
     for (int i=starterStr.length()-1; i>=0; i--) {
-      reversed.append (starterStr.charAt (i));
+      reversedStr.append (starterStr.charAt (i));
     }
 
-    return reversed.toString();
+    return reversedStr.toString();
   }
 }

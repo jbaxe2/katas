@@ -13,8 +13,8 @@ public class SurrealCheck {
     List<Double> leftNums, rightNums;
 
     try {
-      leftNums = _convertStringsToDoubles (_splitNumbersStr (left));
-      rightNums = _convertStringsToDoubles (_splitNumbersStr (right));
+      leftNums = _convertStringsToDoubles (left.split (" "));
+      rightNums = _convertStringsToDoubles (right.split (" "));
     } catch (Exception e) {
       return false;
     }
@@ -33,10 +33,6 @@ public class SurrealCheck {
     }
 
     return numDoubles;
-  }
-
-  private String[] _splitNumbersStr (String numbersStr) {
-    return numbersStr.split (" ");
   }
 
   private boolean _checkLeftVsRight (List<Double> left, List<Double> right) {

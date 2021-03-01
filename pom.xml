@@ -6,7 +6,7 @@
 
   <groupId>com.jbaxe2</groupId>
   <artifactId>katas</artifactId>
-  <version>0.11.0</version>
+  <version>0.12.2</version>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
