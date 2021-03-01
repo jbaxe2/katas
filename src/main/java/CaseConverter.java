@@ -1,5 +1,3 @@
-
-
 public class CaseConverter {
   public static String toCamelCase (String starterString) {
     String[] splitStrings =
