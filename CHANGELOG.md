@@ -1,5 +1,9 @@
 *Simple katas Changelog.*
 
+0.13.0
+- Removed adder.
+- Added factorial.
+
 0.12.2
 - Minor refactoring.
 
