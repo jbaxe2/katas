@@ -1,5 +1,8 @@
 *Simple katas Changelog.*
 
+0.14.0
+- Added enough is enough.
+
 0.13.0
 - Removed adder.
 - Added factorial.

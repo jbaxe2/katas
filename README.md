@@ -19,3 +19,4 @@ Some of these katas were found on codewars.com:
 - Surreal Number Construction Rule (5a24e2258f27f2bcb50000c7)
 - Sum of Parts (5ce399e0047a45001c853c2b)
 - Factorial (54ff0d1f355cfd20e60001fc)
+- Enough is Enough (554ca54ffa7d91b236000023)
