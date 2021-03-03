@@ -10,7 +10,7 @@ public class EnoughIsEnough {
       return new int[]{};
     }
 
-    return  _deleteNth (elements, maxOccurrences);
+    return _deleteNth (elements, maxOccurrences);
   }
 
   private static int[] _deleteNth (int[] elements, int maxOccurrences) {
