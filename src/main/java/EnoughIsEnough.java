@@ -2,6 +2,10 @@ import java.util.*;
 
 public class EnoughIsEnough {
   public static int[] deleteNth (int[] elements, int maxOccurrences) {
+    if (null == elements) {
+      return null;
+    }
+
     if (0 == maxOccurrences) {
       return new int[]{};
     }

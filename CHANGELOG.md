@@ -1,5 +1,8 @@
 *Simple katas Changelog.*
 
+0.14.1
+- Included edge case for enough is enough.
+
 0.14.0
 - Added enough is enough.
 

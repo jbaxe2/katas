@@ -46,4 +46,10 @@ public class EnoughIsEnoughTest {
       EnoughIsEnough.deleteNth (new int[] {1, 2, 3, 4, 5}, 0)
     );
   }
+
+  @Test
+  @DisplayName("Input of a null array results in returning null.")
+  public void testInputOfNullArrayResultsNull() {
+    assertArrayEquals ((int[])null, null);
+  }
 }
