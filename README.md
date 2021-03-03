@@ -20,3 +20,4 @@ Some of these katas were found on codewars.com:
 - Sum of Parts (5ce399e0047a45001c853c2b)
 - Factorial (54ff0d1f355cfd20e60001fc)
 - Enough is Enough (554ca54ffa7d91b236000023)
+- Find the Next Perfect Square (56269eb78ad2e4ced1000013)

@@ -1,5 +1,8 @@
 *Simple katas Changelog.*
 
+0.15.0
+- Added find the next perfect square.
+
 0.14.1
 - Included edge case for enough is enough.
 
