@@ -1,6 +1,5 @@
 A project containing some katas.  The focus for my kata solutions will be
-semantic expressiveness.  Will attempt to add at least one kata solution each
-day.  The project will be written using Java (currently 15).
+semantic expressiveness.  The project will be written using Java.
 
 Some of these katas were found on codewars.com:
 - Create Phone Number (525f50e3b73515a6db000b83)
